@@ -211,8 +211,10 @@ header p {
     gap: 0.5rem;
 }
 
-.hobbies-list summary::-webkit-details-marker {
+.hobbies-list summary::-webkit-details-marker,
+.hobbies-list summary::marker {
     display: none;
+    content: none;
 }
 
 .material-symbols-outlined {
