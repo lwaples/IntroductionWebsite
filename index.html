@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown on browser tab -->
+    <title>Leona's Portfolio Website</title>
+
+    <!-- Connects the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- HEADER / NAME SECTION -->
+    <header>
+        <h1>Leona Waples</h1>
+        <p>Cybersecurity major • Future Web Developer</p>
+        <nav class="header-nav" aria-label="Primary">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- BIO SECTION -->
+    <section id="about" class="card">
+        <h2>About Me ✨</h2>
+
+        <p>
+            Hello and Welcome! My name is Leona I am currently majoring in Cybersecurity
+            at the University of Cincinati and learning web development.
+            I enjoy creating websites and improving my coding skills.
+            My goal is to become a proficient web developer while maintaining my passion for cybersecurity.
+            This portfolio will showcase projects I create throughout my course and allow you to learn more about me.
+        </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="card">
+        <h2>Skills 💻</h2>
+        <p>(These are skills I have aquired or are still learning)</p>
+        <ul class="skills-list">
+            <li><button type="button">SQL</button></li>
+            <li><button type="button">JavaScript</button></li>
+            <li><button type="button">HTML</button></li>
+            <li><button type="button">CSS</button></li>
+            <li><button type="button">Python</button></li>
+        </ul>
+    </section>
+
+<!-- PROJECTS SECTION -->
+    <section id="projects" class="card">
+        <h2>Projects 🚀</h2>
+        <p>Here are some of the projects I've worked on:</p>
+        <ul class="projects-list">
+            <li>
+                <h3>Project 1: Personal Website</h3>
+                <p>A simple personal website to showcase my skills and projects.</p>
+            </li>
+            <li>
+                <h3>Project 2: </h3>
+                <p>---</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- HOBBIES / INTERESTS SECTION -->
+    <section id="hobbies" class="card">
+        <h2>Hobbies & Interests 🖤</h2>
+        <p> In my freetime these are some of the hobbies I enjoy and partake in ( ◠‿◠ )</p>
+        <ul class="hobbies-list">
+            <li>
+                <details>
+                    <summary>Gaming</summary>
+                    <div class="hobby-details">
+                        <div class="hobby-buttons">
+                            <button type="button" disabled>Fortnite</button>
+                            <button type="button" disabled>The Sims</button>
+                            <button type="button" disabled>BlackOps7</button>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Music</summary>
+                    <div class="hobby-details">
+                        <div class="hobby-buttons">
+                            <button type="button" disabled>Slipknot</button>
+                            <button type="button" disabled>Deftones</button>
+                            <button type="button" disabled>Kendrick Lamar</button>
+                            <button type="button" disabled>Daniel Caesar</button>
+                            <button type="button" disabled>Brent Faiyaz</button>
+                            <button type="button" disabled">The Weeknd</button>
+                            <button type="button" disabled">J.Cole</button>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Art</summary>
+                    <div class="hobby-details">
+                        <div class="hobby-buttons">
+                            <button type="button" disabled>Drawing</button>
+                            <button type="button" disabled>Painting</button>
+                            <button type="button" disabled>Clay Art</button>
+                            <button type="button" disabled>Digital Art</button>
+                        </div>
+                    </div>
+                </details>
+            </li>
+            <li>
+                <details>
+                    <summary>Others</summary>
+                    <div class="hobby-details">
+                        <div class="hobby-buttons">
+                            <button type="button" disabled>Watching Anime</button>
+                            <button type="button" disabled>Reading</button>
+                            <button type="button" disabled>Traveling</button>
+                        </div>
+                    </div>
+                </details>
+            </li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="card">
+        <h2>Contact ✉️</h2>
+        <p>Feel free to reach out — email or find me on Instagram.</p>
+        <ul class="contact-list">
+            <li>
+                <a href="mailto:leonawaples@gmail.com" class="contact-item">
+                    <img src="img/email.svg" alt="Email icon" class="contact-icon">
+                    <span class="contact-text">leonawaples@gmail.com</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/leonagrace_?igsh=OG9wcDE2ZzAxc3do&utm_source=qr" class="contact-item" aria-label="Instagram">
+                    <img src="img/instagram.svg" alt="Instagram icon" class="contact-icon">
+                    <span class="contact-text">@leonagrace_</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <button type="button" class="back-to-top-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+        ⬆️ Back to top
+    </button>
+
+    <footer>
+        <p>© 2026 Leona Waples</p>
+    </footer>
+
+</body>
+</html>

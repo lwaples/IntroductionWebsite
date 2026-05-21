@@ -1,0 +1,299 @@
+/* Removes default spacing from browser */
+body {
+    margin: 0;
+    padding: 0;
+
+    /* Simple font */
+    font-family: Arial, sans-serif;
+
+    /* Light background color */
+    background-color: #fccaca;
+
+    /* Dark text color */
+    color: #333;
+}
+
+/* HEADER SECTION */
+header {
+    background-color: #4a90e2;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/07/04/83/93/1000_F_704839353_huAelv6rIJeOrLeUzWTe1arwwEXH3hOD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+
+    text-align: center;
+
+    padding: 40px 20px 30px;
+}
+
+/* Makes the name larger */
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin: 12px auto 24px;
+    max-width: 600px;
+    font-size: 1.05rem;
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    max-width: 700px;
+}
+
+.header-nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background-color: #fccaca;
+    color: #1f2f50;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(31, 47, 80, 0.12);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.header-nav a:hover,
+.header-nav a:focus-visible {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    .header-nav {
+        gap: 10px;
+    }
+
+    .header-nav a {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+}
+
+/* SECTION CARDS */
+.card {
+    background-color: white;
+
+    margin: 20px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    /* Small shadow effect */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Section titles */
+.card h2 {
+    color: #56a5ff;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    margin: 0;
+}
+
+.skills-list button {
+    all: unset;
+    cursor: default;
+    display: inline-block;
+    padding: 8px 14px;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.skills-list button:hover,
+.skills-list button:focus {
+    background-color: #fccaca;
+    outline: none;
+}
+
+.hobbies-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+.hobbies-list details {
+    background: linear-gradient(135deg, rgba(255, 233, 244, 0.9), rgba(219, 238, 255, 0.9));
+    border: 1px solid rgba(86, 165, 255, 0.35);
+    border-radius: 14px;
+    padding: 12px 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hobbies-list summary {
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 0;
+    list-style: none;
+    color: #2b4f78;
+}
+
+.hobbies-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.hobbies-list summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.65rem;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+    color: #4a90e2;
+}
+
+.hobbies-list details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.hobbies-list .hobby-details {
+    margin-top: 10px;
+    padding: 16px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(86, 165, 255, 0.35);
+    color: #333;
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.hobby-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.hobby-buttons button {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(255, 192, 203, 0.95), rgba(86, 165, 255, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #1f2f50;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: default;
+}
+
+.hobby-buttons button:disabled {
+    pointer-events: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+
+    padding: 15px;
+
+    background-color: #222;
+    color: white;
+
+    margin-top: 20px;
+}
+
+/* CONTACT LIST (matches visual style of skills) */
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0 0 0;
+    padding: 0;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.contact-list li {
+    margin: 0;
+}
+
+.contact-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #d1d1d1;
+    font-weight: 600;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    background-color: #fccaca;
+}
+
+.back-to-top-button {
+    display: block;
+    margin: 16px auto 0;
+    padding: 12px 18px;
+    border-radius: 999px;
+    border: 1px solid #d1d1d1;
+    background-color: #4a90e2;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top-button:hover,
+.back-to-top-button:focus {
+    background-color: #3677bf;
+    transform: translateY(-1px);
+    outline: none;
+}
+
+.back-to-top-button:focus-visible {
+    outline: 3px solid rgba(86, 165, 255, 0.7);
+    outline-offset: 2px;
+}
+
+.contact-icon {
+    width: 26px;
+    height: 26px;
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .contact-list {
+        justify-content: center;
+    }
+}
